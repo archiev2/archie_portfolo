@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Archie's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+	body {
+		position: relative; 
+		font-size: 25px;
+	}
+	#nav_title{ font-size: 30px; }
+	.con{
+		min-height:650px;
+		color: #fff;
+		padding: 50px;
+	}
+	#con1 { 
+		background-color: #1E88E5; 
+		padding: 100px;
+		
+		}
+	#con2 { background-color: #673ab7; }
+	#con3 { background-color: #ff9800; }
+	#con4 { background-color: blue; }
+	#con5 { background-color: green; }
+	#my_pic{
+		width: 200px; 
+		height: 200px;
+		border: 1px solid red;
+		background: #c2c2c2;
+		float: right;
+		margin: 10px 100px;
+	}
+	.clr{ clear: both; }
+	h1{ 
+		margin: 25px; 
+		font-weight: bold;
+	}
+	p { padding: 10px; }
+	#title_and_pic{
+	
+	}
+	#about_me_text{
+		float: left;
+		margin-top: 150px;
+		margin-left: 50px;
+	
+	}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>                        
+		</button>
+		<a class="navbar-brand" href="#" id="nav_title">Hi I'm Archie</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#con1">About</a></li>
+          <li><a href="#con2">Skills</a></li>
+          <li><a href="#con3">Experience</a></li>
+          <li><a href="#con4">Service</a></li>
+          <li><a href="#con5">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="con1" class="container-fluid con">
+	<div id="title_and_pic">
+		
+		<div class="con_title" id="about_me_text">ABOUT ME</div>
+		<div id="my_pic"></div>
+		<div class="clr"></div>
+		
+	</div>
+	<p>
+	I'm a full stack php developer with over 7 years of experience in web development, project management, Q&A, technical support, debugging, and training staff within eCommerce technologies and user interface application. Proven ability in optimizing web functionality that improve data retrieval and workflow efficiencies.
+	</p>
+	<p>
+	I am a very hard working and extremely results-oriented individual and proactive in finding cost-effective solutions and I'm confident that i can work with my future clients well. 
+	</p>
+</div>
+
+<div id="con2" class="container-fluid con">
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/modules/export-data.js"></script>
+	<h1>Skills and Tools</h1>
+		<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+	<script>
+		$(document).ready(function(){
+			Highcharts.chart('container', {
+			chart: {
+				type: 'column'
+			},
+			title: {
+				text: 'Language and Framework'
+			},
+			xAxis: {
+				type: 'category'
+			},
+			yAxis: {
+				title: {
+					text: ''
+				}
+
+			},
+			legend: {
+				enabled: false
+			},
+			plotOptions: {
+				series: {
+					borderWidth: 0,
+					dataLabels: {
+						enabled: true,
+						format: '{point.y:.1f}%'
+					}
+				}
+			},
+
+
+			"series": [
+				{
+					"name": " ",
+					"colorByPoint": true,
+					"data": [
+						{
+							"name": "PHP",
+							"y": 91,
+							"drilldown": "Language"
+						},
+						{
+							"name": "HTML & CSS",
+							"y": 95,
+							"drilldown": "Language"
+						},
+						{
+							"name": "Javascript",
+							"y": 85,
+							"drilldown": "Language"
+						},
+						{
+							"name": "SQL",
+							"y": 85,
+							"drilldown": "Language"
+						},
+						{
+							"name": "Codeigniter",
+							"y": 85,
+							"drilldown": "Framework"
+						},
+						{
+							"name": "Jquery and Jquery UI",
+							"y": 90,
+							"drilldown": "Framework"
+						},
+						{
+							"name": "Magento",
+							"y": 75,
+							"drilldown": "Framework"
+						},
+						{
+							"name": "Laravel",
+							"y": 40,
+							"drilldown": "Framework"
+						},
+						{
+							"name": "Bootstrap ",
+							"y": 65,
+							"drilldown": "Framework"
+						},
+						{
+							"name": "AngularJS ",
+							"y": 50,
+							"drilldown": "Framework"
+						},
+						{
+							"name": "GitHub ",
+							"y": 75,
+							"drilldown": "Framework"
+						},
+						
+					]
+				}
+			]
+		
+		});
+		});
+	</script>
+</div>
+<div id="con3" class="container-fluid con">
+	<h1>PROFESSIONAL EXPERIENCE</h1>
+	<div class="prof_exp">
+		<div class="container-fluid prof_exp_con bg-info">
+			<div class="prof_exp_title">Webcert (Project Management System)</div>
+			<div class="prof_exp_details">
+				<div class="prof_exp_data">
+					<div><span class="fa fa-long-arrow-right"></span>Date: Jan. 2014 – July 2018</div>
+					<div><span class="fa fa-long-arrow-right"></span>Position: Web Developer, Maintenance, and Technical Support</div>
+					<div><span class="fa fa-long-arrow-right"></span>Location: Victoria, Melbourne, Australia</div>
+					<div><span class="fa fa-long-arrow-right"></span>Website: <a href="http://webcert.org.au">http://webcert.org.au</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid prof_exp_con bg-info">
+			<div class="prof_exp_title">WebXpress.inc</div>
+				<div class="prof_exp_data">
+					<div><span class="fa fa-long-arrow-right"></span>Date: Oct. 2011- Dec. 2013</div>
+					<div><span class="fa fa-long-arrow-right"></span>Position: Web Developer</div>
+					<div><span class="fa fa-long-arrow-right"></span>Location: i3 building, IT Park, Lahug, Cebu City, Cebu, Philippines</div>
+				</div>
+		</div>
+		<div class="container-fluid prof_exp_con bg-info">
+			<div class="prof_exp_title">Paymycafe.inc</div>
+				<div class="prof_exp_data">
+					<div><span class="fa fa-long-arrow-right"></span>Date: Feb. 2011 – Aug. 2011</div>
+					<div><span class="fa fa-long-arrow-right"></span>Position: Web Developer</div>
+					<div><span class="fa fa-long-arrow-right"></span>Location: Banawa, Cebu City, Cebu, Philippines</div>
+					<div><span class="fa fa-long-arrow-right"></span>Website: <a href="http://paymycafe.com">http://paymycafe.com</a></div>
+				</div>
+		</div>
+		<div class="container-fluid prof_exp_con bg-info">
+			<div class="prof_exp_title">Mr. E-Sourcing/callout Solution</div>
+				<div class="prof_exp_data">
+					<div><span class="fa fa-long-arrow-right"></span>Date: Jan. 2010 – Nov. 2010</div>
+					<div><span class="fa fa-long-arrow-right"></span>Position: Web Developer</div>
+					<div><span class="fa fa-long-arrow-right"></span>Location: VSB building, Lacson St. Bacolod City, Negros Occ. Philippines</div>
+					<div><span class="fa fa-long-arrow-right"></span>Website: Website: <a href="http://www.mresourcing.com/">http://www.mresourcing.com/</a></div>
+					<div><span class="fa fa-long-arrow-right"></span>Work Type: Outsource</div>
+				</div>
+		</div>
+	</div>
+	<style>
+		.prof_exp_title2{
+			font-weight: bold;
+			border-bottom: 1px solid #c2c2c2;
+			padding: 2px 10px;
+			font-size: 20px;
+		}
+		.prof_exp_con2{
+			padding: 10px;
+			
+			color: #000;
+			border-radius: 5px; 
+			margin: 10px;
+		}
+		.prof_exp_data div2{
+			margin: 2px 50px;
+			font-size: 15px;
+		}
+		.prof_exp_data span2{
+			margin-right: 10px;
+		}
+	</style>
+</div>
+<div id="con4" class="container-fluid con">
+  <h1>Services</h1>
+  <!--
+	<div class="container-fluid srv_container">
+		<div class="srv_right">
+			<div class="srv_desc_con">
+				<div class="srv_desc_title">PHP Development</div>
+				<div class="srv_desc">
+					asdasdasdasdasdasd asd asd asd asd
+				</div>
+			</div>
+		</div>
+		<div class="srv_left">
+			<div class="srv_icon">
+				sdsd
+			</div>
+		</div>
+		
+		<div class="clr"></div>
+	</div>
+	-->
+
+              <div class="col-sm-1 col-md-1 col-xs-12 image-container">
+                <img src="https://pre00.deviantart.net/09d1/th/pre/f/2016/078/b/f/firefox_anime_icon_by_sharif9991-d6r5gjj.png" style="height:200px; margin-left:-15px;" />
+              </div>
+
+              <div class="col-sm-20 col-md-20 col-xs-25">  
+
+                <h3>Hello World</h3>
+                 <p style="font-size:10px; color:#03225C;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum fermentum, mi felis vehicula justo, a dapibus quam augue non massa.   </p>
+              </div>
+           
+
+
+	
+	<style>
+		.srv_left{
+			float: left;
+			width: 30%;
+			background: #c2c2c2;
+		}
+		.srv_left{
+			float: right;
+			width: 70%;
+			background: #d4d4d4;
+		}
+		.srv_icon{
+			width: 100px;
+			height: 100px;
+			border: 1px solid red;
+			margin: 20px;
+		}
+		.srv_desc_con{
+			 
+		}
+	</style>
+ </div>
+<div id="con5" class="container-fluid con">
+  <h1>Section 4 Submenu 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+</body>
+</html>
